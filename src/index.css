@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-fantasy: 'Cinzel', serif;
+    --font-ui: 'Plus Jakarta Sans', sans-serif;
+    --font-code: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    font-family: var(--font-ui), system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior-y: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  /* Allow text selection in notes and search inputs */
+  input, textarea, [contenteditable="true"], .select-text {
+    user-select: text;
+    -webkit-user-select: text;
+  }
+}
+
+.font-fantasy {
+  font-family: var(--font-fantasy), serif;
+}
+
+.font-mono-numbers {
+  font-family: var(--font-code), monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbars with dark slate & amber accents */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 0.6);
+}

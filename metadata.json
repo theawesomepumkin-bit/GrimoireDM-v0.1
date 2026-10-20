@@ -1,0 +1,6 @@
+{
+  "name": "GrimoireDM - 5e Tabletop Companion & Battle Map",
+  "description": "Comprehensive D&D 5e DM Companion optimized for iPad and desktop with ambient audio soundboard, bulk data importer, tactical battle grid, and initiative tracker.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
